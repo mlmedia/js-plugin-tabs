@@ -1,14 +1,11 @@
-/**
- * product detail tab section
- */
-#my_tabs_2  {
+.styled_tabs  {
 	display:block;
 	clear:both;
 	overflow:hidden;
 	display:block;
 }
 
-#my_tabs_2 ul.tab_controls {
+.styled_tabs .controls {
 	margin:20px 0 0;
 	border-bottom:1px solid #999999;
 	padding-left:20px;
@@ -16,7 +13,7 @@
 	width:100%;
 }
 
-#my_tabs_2 ul.tab_controls li a.tab_control {
+.styled_tabs .controls .control {
 	padding:10px 20px;
 	margin-right:5px;
 	font-size:14px;
@@ -24,22 +21,12 @@
 	border-bottom:none;
 }
 
-#my_tabs_2 ul.tab_controls li a.tab_control.current {
+.styled_tabs .controls .control.current {
 	border-bottom:1px solid #ffffff;
 	margin-bottom:-1px !important;
 }
 
-#my_tabs_2 .tab_wrapper {
-	display:block;
-	width:100%;
-	border:1px solid #999999;
-	border-top:none;
-	overflow:hidden;
-	clear:both;
-	padding:20px 30px;
-}
-
-#my_tabs_2 .tab_targets {
+.styled_tabs .targets {
 	width:660px;
 	float:left;
 	clear:none;

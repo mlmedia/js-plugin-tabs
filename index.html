@@ -14,82 +14,93 @@
 	<div class="container">
 		<div class="whitebox">
 			<h1>jQuery tabs plugin</h1>
-			<div id="my_tabs_1" class="clearfix">
-				<ul class="tab_controls">
-					<li><a href="#" class="tab_control active" rel="tab_1">Tab #1</a></li>
-					<li><a href="#" class="tab_control" rel="tab_2">Tab #2</a></li>
-					<li><a href="#" class="tab_control" rel="tab_3">Tab #3</a></li>
-					<li><a href="#" class="tab_control" rel="tab_4">Tab #4</a></li>
-					<li><a href="#" class="tab_control" rel="tab_5">Tab #5</a></li>
-				</ul>
-				<div class="tab_targets">
-					<div id="tab_1" class="tab_target">
+			<div id="my_tabs_1" class="tab_group clearfix">
+				<div class="controls">
+					<a href="#" class="control current">Tab #1</a>
+					<a href="#" class="control">Tab #2</a>
+					<a href="#" class="control">Tab #3</a>
+					<a href="#" class="control">Tab #4</a>
+					<a href="#" class="control">Tab #5</a>
+				</div>
+				<div class="targets">
+					<div class="target">
 						<h2>Tab 1</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna diam, commodo at diam a, vulputate sagittis magna. Pellentesque a congue metus. Vestibulum varius dictum posuere.
 						</p>
 					</div>
-					<div id="tab_2" class="tab_target">
+					<div class="target">
 						<h2>Tab 2</h2>
 						<p>
 							Mauris ac metus id ante varius molestie porttitor non nisi. Vivamus turpis augue, faucibus sed ex nec, cursus eleifend mauris. Vestibulum ut auctor lorem. Etiam ultricies pharetra sapien a sodales. Suspendisse condimentum felis sit amet velit venenatis, sed imperdiet turpis consectetur. Fusce non turpis egestas lorem vulputate aliquam. Curabitur vestibulum tristique eros, non euismod nisl iaculis et. In fermentum leo ac nibh rhoncus euismod. Vestibulum id venenatis erat.
 						</p>
 					</div>
-					<div id="tab_3" class="tab_target">
+					<div class="target">
 						<h2>Tab 3</h2>
 						<p>
 							Ut viverra imperdiet sodales. Donec pharetra, ex at viverra placerat, lacus mi scelerisque nisl, non suscipit magna enim sed purus. Sed et erat eleifend, tempus ante a, vulputate ligula. Quisque interdum eros placerat, semper felis eget, cursus lectus. Aenean dapibus nibh eget rutrum aliquam. Suspendisse ultrices justo pharetra interdum pharetra. Maecenas a bibendum lorem. Quisque lobortis viverra blandit. Maecenas venenatis faucibus odio nec efficitur. Maecenas fringilla congue sapien porttitor tincidunt. Ut eget leo sed leo placerat varius in dictum velit.
 						</p>
 					</div>
-					<div id="tab_4" class="tab_target">
+					<div class="target">
 						<h2>Tab 4</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna diam, commodo at diam a, vulputate sagittis magna. Pellentesque a congue metus. Vestibulum varius dictum posuere.
 						</p>
 					</div>
-					<div id="tab_5" class="tab_target">
+					<div class="target">
 						<h2>Tab 5</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna diam, commodo at diam a, vulputate sagittis magna. Pellentesque a congue metus. Vestibulum varius dictum posuere.
 						</p>
 					</div>
 				</div>
-
 			</div>
-			<div id="my_tabs_2" class="clearfix">
-				<ul class="tab_controls">
-					<li><a href="#" class="tab_control active" rel="tab_1">Tab #1</a></li>
-					<li><a href="#" class="tab_control" rel="tab_2">Tab #2</a></li>
-					<li><a href="#" class="tab_control" rel="tab_3">Tab #3</a></li>
-					<li><a href="#" class="tab_control" rel="tab_4">Tab #4</a></li>
-					<li><a href="#" class="tab_control" rel="tab_5">Tab #5</a></li>
-				</ul>
-				<div class="tab_targets">
-					<div id="tab_1" class="tab_target">
+			<script type="text/javascript">
+				/* define $ as jQuery just in case */
+				( function( $ )
+				{
+					/* doc ready */
+					$( function( )
+					{
+						/* init the plugin */
+						$( '#my_tabs_1' ).tabs( );
+					});
+				})( jQuery );
+			</script>
+			<div id="my_tabs_2" class="tab_group styled_tabs clearfix">
+				<div class="controls">
+					<a href="#" class="control">Tab #1</a>
+					<a href="#" class="control">Tab #2</a>
+					<a href="#" class="control current">Tab #3</a>
+					<a href="#" class="control">Tab #4</a>
+					<a href="#" class="control">Tab #5</a>
+				</div>
+				<div class="targets">
+					<div class="target">
 						<h2>Tab 1</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna diam, commodo at diam a, vulputate sagittis magna. Pellentesque a congue metus. Vestibulum varius dictum posuere.
 						</p>
 					</div>
-					<div id="tab_2" class="tab_target">
+					<div class="target">
 						<h2>Tab 2</h2>
 						<p>
 							Mauris ac metus id ante varius molestie porttitor non nisi. Vivamus turpis augue, faucibus sed ex nec, cursus eleifend mauris. Vestibulum ut auctor lorem. Etiam ultricies pharetra sapien a sodales. Suspendisse condimentum felis sit amet velit venenatis, sed imperdiet turpis consectetur. Fusce non turpis egestas lorem vulputate aliquam. Curabitur vestibulum tristique eros, non euismod nisl iaculis et. In fermentum leo ac nibh rhoncus euismod. Vestibulum id venenatis erat.
 						</p>
 					</div>
-					<div id="tab_3" class="tab_target">
+					<div class="target">
 						<h2>Tab 3</h2>
 						<p>
 							Ut viverra imperdiet sodales. Donec pharetra, ex at viverra placerat, lacus mi scelerisque nisl, non suscipit magna enim sed purus. Sed et erat eleifend, tempus ante a, vulputate ligula. Quisque interdum eros placerat, semper felis eget, cursus lectus. Aenean dapibus nibh eget rutrum aliquam. Suspendisse ultrices justo pharetra interdum pharetra. Maecenas a bibendum lorem. Quisque lobortis viverra blandit. Maecenas venenatis faucibus odio nec efficitur. Maecenas fringilla congue sapien porttitor tincidunt. Ut eget leo sed leo placerat varius in dictum velit.
 						</p>
 					</div>
-					<div id="tab_4" class="tab_target">
+					<div class="target">
 						<h2>Tab 4</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna diam, commodo at diam a, vulputate sagittis magna. Pellentesque a congue metus. Vestibulum varius dictum posuere.
 						</p>
 					</div>
-					<div id="tab_5" class="tab_target">
+					<div class="target">
 						<h2>Tab 5</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna diam, commodo at diam a, vulputate sagittis magna. Pellentesque a congue metus. Vestibulum varius dictum posuere.
@@ -106,7 +117,7 @@
 					$( function( )
 					{
 						/* init the plugin */
-						$( '#my_tabs_1, #my_tabs_2' ).tabs( );
+						$( '#my_tabs_2' ).tabs( );
 					});
 				})( jQuery );
 			</script>
