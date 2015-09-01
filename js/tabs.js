@@ -10,7 +10,7 @@
 		/* set vars */
 		var tab_group = this;
 		var tab_controls = tab_group.find( '.control' );
-		var active_tabs = tab_group.find( '.control.current' );
+		var active_tabs = tab_group.find( '.control.active' );
 		var tab_targets = tab_group.find( '.target' );
 		var active_tab = active_tabs.first( ).length > 0 ? active_tabs.first( ) : tab_group.find( '.tab_control:eq(0)' );
 		var target_index = active_tab.index( );
@@ -21,8 +21,8 @@
 		$( window ).load( function( )
 		{
 			/* grab the active tab and hide all other tabs */
-			tab_controls.removeClass( 'current' );
-			active_tab.addClass( 'current' );
+			tab_controls.removeClass( 'active' );
+			active_tab.addClass( 'active' );
 			tab_targets.hide( );
 			target_el.show( );
 
@@ -34,8 +34,8 @@
 		tab_group.on( 'click', '.control', function( e )
 		{
 			/* set active class on the clicked tab */
-			tab_controls.removeClass( 'current' );
-			$( this ).addClass( 'current' );
+			tab_controls.removeClass( 'active' );
+			$( this ).addClass( 'active' );
 
 			/* grab the target tab and show it */
 			var target_index = $( this ).index( );

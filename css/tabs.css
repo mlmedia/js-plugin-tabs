@@ -34,7 +34,7 @@
 	border-bottom:none;
 }
 
-.styled_tabs .controls .control.current {
+.styled_tabs .controls .control.active {
 	border-bottom:1px solid #ffffff;
 	margin-bottom:-1px !important;
 	background-color:#ffffff;
