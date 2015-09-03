@@ -56,6 +56,18 @@ hr {
     padding:2em 2em 3em;
 }
 
+.align-left {
+    float:left;
+    display:inline-block;
+    margin-right:1em;
+}
+
+.align-right {
+    float:right;
+    display:inline-block;
+    margin-left:1em;
+}
+
 
 /* mobile */
 @media max-width979px{
