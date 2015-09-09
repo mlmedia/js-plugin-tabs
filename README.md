@@ -13,7 +13,9 @@ Usage of this tabs plugin entails the usual process:
 
 ###HTML###
 
-The HTML markup must have a containing parent element, which can use any ID or class for initialization. The parent element must contain an element with a "controls" class and an element with a "targets" class.  
+The HTML markup must have a containing parent element, which can use any ID or class for initialization.
+
+The parent element must contain an element with a "controls" class and an element with a "targets" class.  
 
 The "controls" element will contain as many "control" elements as desired, which will contain the tab title.  Each control element will trigger the visibility of its respective "target" element when clicked.
 
