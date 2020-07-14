@@ -4,6 +4,7 @@
 	overflow: hidden;
 	display: block;
 }
+
 .styled_tabs .controls {
 	float: left;
 	margin: 20px 0 0;
@@ -13,6 +14,7 @@
 	width: 100%;
 	clear: both;
 }
+
 .styled_tabs .controls .control {
 	text-decoration: none;
 	background-color: #cccccc;
@@ -31,11 +33,13 @@
 	border: 1px solid #999999;
 	border-bottom: none;
 }
+
 .styled_tabs .controls .control.active {
 	border-bottom: 1px solid #ffffff;
 	margin-bottom: -1px !important;
 	background-color: #ffffff;
 }
+
 .styled_tabs .targets {
 	float: left;
 	clear: none;
